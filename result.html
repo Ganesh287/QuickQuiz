@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <style>
+        body{
+           display: flex;
+           justify-content: center;
+           margin-top: 30vh;
+            background-image: url(result.jpg);
+            background-size: cover;
+        }
+        div{
+            background-color: white;
+            width: 40vh;
+            height: 35vh;
+            display: flex;
+            border:2px solid black;
+            border-radius: 50%;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            width:12vh;
+            height:6vh;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-weight: bold;
+            background-color: rgb(67, 67, 255);
+            cursor: pointer;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+        <div id="scorecard">
+            <h1>Your Score is</h1>
+            <h2 id="score">x/5</h2>
+            <button onclick="window.location.href='home.html'">Home  ></button>
+        </div>
+</body>
+</html>

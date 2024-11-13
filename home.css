@@ -1,0 +1,110 @@
+body{
+    font-family: sans-serif;
+}
+.heading{
+    height: 10%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heading h1{
+    margin-left: 10vh;
+    font-size: 4vh;
+    
+}
+.heading button{
+    background-color: red;
+    width:11vh;
+    height: 5vh;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+    margin-top: 2.3vh;
+    margin-right: 15vh;
+    border-radius: 10px;
+}
+.heading button:hover{
+    transform: scale(1.1);
+    cursor:pointer;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    color:rgb(244, 110, 110);
+    font-size: 2.3vh;
+    margin-top: 5vh;
+}
+.quizes{
+    margin-left: 32vh;
+    margin-right: 10vh;
+    width:70%;
+    height:65vh;
+    padding-top: 4vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap:8vh ;
+    justify-content:center;
+    
+}
+#C img,#CPP img,#Java img,#Python img{
+    width: 50%;
+    height: 80%;
+    margin-top: 2vh;
+}
+@media  (max-width: 1020px)  {
+    .quizes{
+        margin-left:10vh;
+    }
+    #C img,#CPP img,#Java img,#Python img{
+        width: 70%;
+        height: 50%;
+        margin-top: 5vh;
+    }
+    
+}
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+#C,#CPP,#Java,#Python{
+    background:linear-gradient(to bottom right,aliceblue,aliceblue,lightblue);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.55);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width:30%;
+    height:28vh;
+    border: solid 1px;
+    cursor: pointer;
+}
+#C:hover,#CPP:hover,#Java:hover,#Python:hover{
+    transform: scale(1.04);
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.55);
+
+}
+#C {
+    background: linear-gradient(to bottom right, #f0f9ff, #a2d2ff); /* Soft sky blue */
+}
+
+#CPP {
+    background: linear-gradient(to bottom right, #e8f5e9, #9efe94); /* Mint green */
+}
+
+#Java {
+    background: linear-gradient(to bottom right, #fff3e0, #ffcc80); /* Light orange */
+}
+
+#Python {
+    background: linear-gradient(to bottom right, #f3e5f5, #ce93d8); /* Soft lavender */
+}
+
+

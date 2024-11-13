@@ -1,0 +1,94 @@
+body{
+    height:96vh;
+    background-color: antiquewhite;
+}
+.heading{
+    padding-left: 8vh;
+}
+.mainQuiz{
+    width:100%;
+    height: 80vh;
+    
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:flex-start;
+}
+.que{
+    height: 10%;
+    width: 92%;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin-top: 5vh;
+    margin-left: 2vh;
+    font-size: 2.4vh;
+    background-color: white;
+    padding-left:5vh ;
+    padding-bottom: 1vh;
+    overflow:hidden;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.55);
+}
+.ans{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width:85%;
+    margin-top: 2vh;
+    padding-left: 4vh;
+}
+label{
+    border: 1px solid black ;
+    margin-top: 2vh;
+    width: 97%;
+    height: 12%;
+    font-size: 2.4vh;
+    justify-content: center;
+    padding-top: 1.5vh;
+    padding-left: 1vh;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+input[type="radio"] {
+    margin-right:1.7vh;
+    
+    accent-color: #333; /* Darker circle color */
+    width: 16px; /* Increase the size of the circle */
+    height: 16px; /* Increase the size of the circle */
+    border: 3px solid #333; /* Darker border */
+    border-radius: 50%; /* Keep it circular */
+    cursor: pointer; /* Add pointer on hover */
+}
+
+.Next{
+    width: 85%;
+    height:8%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.Next button{
+    height: 6vh;
+    width: 12vh;
+    margin-right: 5vh;
+    color:white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color:rgb(0, 81, 255);
+}
+.Next button:hover{
+    transform: scale(1.04);
+}
